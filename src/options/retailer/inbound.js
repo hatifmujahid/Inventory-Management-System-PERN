@@ -89,7 +89,7 @@ function InboundPage() {
 		const token = localStorage.getItem("token");
 		try {
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getSender",
+				"https://ivms-backend.vercel.app/dashboard/getSender",
 				{
 					method: "GET",
 					headers: {
@@ -108,7 +108,7 @@ function InboundPage() {
 		try {
 			const inputs = { name: "" };
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getProducts",
+				"https://ivms-backend.vercel.app/dashboard/getProducts",
 				{
 					method: "POST",
 					headers: {
@@ -131,7 +131,7 @@ function InboundPage() {
 		try {
 			const inputs = { id: id };
 			const response = await fetch(
-				"http://localhost:5000/dashboard/sendInboundHistory",
+				"https://ivms-backend.vercel.app/dashboard/sendInboundHistory",
 				{
 					method: "POST",
 					headers: {
@@ -159,7 +159,7 @@ function InboundPage() {
 		try {
 			const inputs = { id: id };
 			const response = await fetch(
-				"http://localhost:5000/dashboard/rejectInbound",
+				"https://ivms-backend.vercel.app/dashboard/rejectInbound",
 				{
 					method: "POST",
 					headers: {
@@ -217,7 +217,7 @@ function InboundPage() {
 				sendername: sender,
 			};
 
-			await fetch("http://localhost:5000/dashboard/addInboundNew", {
+			await fetch("https://ivms-backend.vercel.app/dashboard/addInboundNew", {
 				method: "POST",
 				headers: {
 					jwt_token: token,
@@ -254,7 +254,7 @@ function InboundPage() {
 				count: productCount,
 			};
 			const response = await fetch(
-				"http://localhost:5000/dashboard/addInboundExisting",
+				"https://ivms-backend.vercel.app/dashboard/addInboundExisting",
 				{
 					method: "POST",
 					headers: {
@@ -290,7 +290,7 @@ function InboundPage() {
 				name: searchQuery,
 			};
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getInbound",
+				"https://ivms-backend.vercel.app/dashboard/getInbound",
 				{
 					method: "POST",
 					headers: {

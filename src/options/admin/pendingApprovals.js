@@ -21,7 +21,7 @@ function PendingApprovals() {
 		const token = localStorage.getItem("token");
 		try {
 			const response = await fetch(
-				"http://localhost:5000/notif/getAdminNotifications",
+				"https://ivms-backend.vercel.app/notif/getAdminNotifications",
 				{
 					method: "POST",
 					headers: { jwt_token: token },
@@ -42,7 +42,7 @@ function PendingApprovals() {
 			const inputs = { r_id: e["r_id"] };
 
 			const response = await fetch(
-				"http://localhost:5000/notif/handleRetailerRejection",
+				"https://ivms-backend.vercel.app/notif/handleRetailerRejection",
 				{
 					method: "POST",
 					headers: {

@@ -26,7 +26,7 @@ function GetMaxCount({ Transition, handleClose, open, getNotifications }) {
 			const inputs = { r_id: r_id, count: count };
 
 			const response = await fetch(
-				"http://localhost:5000/notif/handleRetailerApproval",
+				"https://ivms-backend.vercel.app/notif/handleRetailerApproval",
 				{
 					method: "POST",
 					headers: {

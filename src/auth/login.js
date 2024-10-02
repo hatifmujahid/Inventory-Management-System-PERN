@@ -36,7 +36,7 @@ function Login({ setAuth }) {
 		};
 		try {
 			const response = await fetch(
-				"http://localhost:5000/authentication/login",
+				"https://ivms-backend.vercel.app/authentication/login",
 				{
 					method: "POST",
 					headers: { "Content-type": "application/json" },

@@ -80,7 +80,7 @@ function OutboundPage() {
 			};
 
 			const response = await fetch(
-				"http://localhost:5000/dashboard/addOutbound",
+				"https://ivms-backend.vercel.app/dashboard/addOutbound",
 				{
 					method: "POST",
 					headers: {
@@ -100,7 +100,7 @@ function OutboundPage() {
 				id: parseRes.outbound_id,
 			};
 			const response2 = await fetch(
-				"http://localhost:5000/dashboard/sendOutboundHistory",
+				"https://ivms-backend.vercel.app/dashboard/sendOutboundHistory",
 				{
 					method: "POST",
 					headers: {
@@ -126,7 +126,7 @@ function OutboundPage() {
 		try {
 			const inputs = { name: "" };
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getProducts",
+				"https://ivms-backend.vercel.app/dashboard/getProducts",
 				{
 					method: "POST",
 					headers: {
@@ -149,7 +149,7 @@ function OutboundPage() {
 				name: searchQuery,
 			};
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getOutbound",
+				"https://ivms-backend.vercel.app/dashboard/getOutbound",
 				{
 					method: "POST",
 					headers: {
@@ -179,7 +179,7 @@ function OutboundPage() {
 		const token = localStorage.getItem("token");
 		try {
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getReciever",
+				"https://ivms-backend.vercel.app/dashboard/getReciever",
 				{
 					method: "GET",
 					headers: {

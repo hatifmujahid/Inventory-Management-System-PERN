@@ -33,7 +33,7 @@ function App() {
 		try {
 			console.log("trying...");
 			const response = await fetch(
-				"http://localhost:5000/authentication/verify",
+				"https://ivms-backend.vercel.app/authentication/verify",
 				{
 					method: "POST",
 					headers: { jwt_token: token },

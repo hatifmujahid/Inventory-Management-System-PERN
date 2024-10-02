@@ -87,7 +87,7 @@ function InventoryPage() {
 		const token = localStorage.getItem("token");
 		try {
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getInventory",
+				"https://ivms-backend.vercel.app/dashboard/getInventory",
 				{
 					method: "GET",
 					headers: { jwt_token: token },
@@ -161,7 +161,7 @@ function InventoryPage() {
 				type: productType,
 			};
 			const response = await fetch(
-				"http://localhost:5000/dashboard/editProduct",
+				"https://ivms-backend.vercel.app/dashboard/editProduct",
 				{
 					method: "POST",
 					headers: {
@@ -195,7 +195,7 @@ function InventoryPage() {
 				id: id,
 			};
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getProductItem",
+				"https://ivms-backend.vercel.app/dashboard/getProductItem",
 				{
 					method: "POST",
 					headers: {
@@ -230,7 +230,7 @@ function InventoryPage() {
 			};
 
 			const response = await fetch(
-				"http://localhost:5000/dashboard/decreaseProduct",
+				"https://ivms-backend.vercel.app/dashboard/decreaseProduct",
 				{
 					method: "POST",
 					headers: {
@@ -262,7 +262,7 @@ function InventoryPage() {
 			};
 
 			const response = await fetch(
-				"http://localhost:5000/dashboard/removeProduct",
+				"https://ivms-backend.vercel.app/dashboard/removeProduct",
 				{
 					method: "POST",
 					headers: {
@@ -318,7 +318,7 @@ function InventoryPage() {
 			};
 
 			const response = await fetch(
-				"http://localhost:5000/dashboard/addProduct",
+				"https://ivms-backend.vercel.app/dashboard/addProduct",
 				{
 					method: "POST",
 					headers: {
@@ -352,7 +352,7 @@ function InventoryPage() {
 				name: searchQuery,
 			};
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getProducts",
+				"https://ivms-backend.vercel.app/dashboard/getProducts",
 				{
 					method: "POST",
 					headers: {

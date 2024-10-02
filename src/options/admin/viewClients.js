@@ -36,7 +36,7 @@ function ViewClients() {
 		try {
 			const inputs = { name: searchQuery };
 			const response = await fetch(
-				"http://localhost:5000/access/getListOfRetailers",
+				"https://ivms-backend.vercel.app/access/getListOfRetailers",
 				{
 					method: "POST",
 					headers: {
@@ -91,7 +91,7 @@ function ViewClients() {
 			const inputs = { inventory_ID: inventory_ID };
 
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getQueriedInventory",
+				"https://ivms-backend.vercel.app/dashboard/getQueriedInventory",
 				{
 					method: "POST",
 					headers: {

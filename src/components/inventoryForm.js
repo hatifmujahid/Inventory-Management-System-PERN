@@ -38,7 +38,7 @@ function InventoryForm({ setAuth }) {
 		};
 		try {
 			const response = await fetch(
-				"http://localhost:5000/dashboard/addInventory",
+				"https://ivms-backend.vercel.app/dashboard/addInventory",
 				{
 					method: "POST",
 					headers: {

@@ -8,7 +8,7 @@ function WelcomeBox() {
 		async function getName(type, token) {
 			const inputs = { type: type };
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getname",
+				"https://ivms-backend.vercel.app/dashboard/getname",
 				{
 					method: "POST",
 					headers: {

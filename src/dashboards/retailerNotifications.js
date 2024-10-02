@@ -9,7 +9,7 @@ function RetailerNotifications() {
 		const token = localStorage.getItem("token");
 		try {
 			const response = await fetch(
-				"http://localhost:5000/notif/getRetailerNotifications",
+				"https://ivms-backend.vercel.app/notif/getRetailerNotifications",
 				{
 					method: "POST",
 					headers: { jwt_token: token },

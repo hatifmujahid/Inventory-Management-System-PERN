@@ -11,7 +11,7 @@ function RetailerOptions() {
 		try {
 			const token = localStorage.getItem("token");
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getRetailerStatus",
+				"https://ivms-backend.vercel.app/dashboard/getRetailerStatus",
 				{
 					method: "POST",
 					headers: { jwt_token: token },

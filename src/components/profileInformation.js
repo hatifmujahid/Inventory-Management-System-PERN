@@ -10,7 +10,7 @@ function ProfileInformation() {
 		async function getProfile(type, token) {
 			const inputs = { type: type };
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getProfile",
+				"https://ivms-backend.vercel.app/dashboard/getProfile",
 				{
 					method: "POST",
 					headers: {

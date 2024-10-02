@@ -20,7 +20,7 @@ function HistoryPage() {
 		try {
 			const inputs = { name: searchQuery };
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getHistory",
+				"https://ivms-backend.vercel.app/dashboard/getHistory",
 				{
 					method: "POST",
 					headers: {

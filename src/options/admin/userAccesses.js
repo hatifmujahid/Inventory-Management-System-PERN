@@ -42,7 +42,7 @@ function AdminHistoryPage() {
 		try {
 			const inputs = { name: searchQuery };
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getAdminHistory",
+				"https://ivms-backend.vercel.app/dashboard/getAdminHistory",
 				{
 					method: "POST",
 					headers: {
@@ -78,7 +78,7 @@ function AdminHistoryPage() {
 			const inputs = { inventory_ID: inventory_ID };
 
 			const response = await fetch(
-				"http://localhost:5000/dashboard/getQueriedRetailer",
+				"https://ivms-backend.vercel.app/dashboard/getQueriedRetailer",
 				{
 					method: "POST",
 					headers: {

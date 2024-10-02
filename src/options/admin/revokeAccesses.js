@@ -35,7 +35,7 @@ function RevokeAccessPage() {
 		try {
 			const inputs = { name: searchQuery };
 			const response = await fetch(
-				"http://localhost:5000/access/getListOfRetailers",
+				"https://ivms-backend.vercel.app/access/getListOfRetailers",
 				{
 					method: "POST",
 					headers: {
@@ -90,7 +90,7 @@ function RevokeAccessPage() {
 			const inputs = { r_id: r_id };
 
 			const response = await fetch(
-				"http://localhost:5000/access/handleRetailerDeletion",
+				"https://ivms-backend.vercel.app/access/handleRetailerDeletion",
 				{
 					method: "POST",
 					headers: {

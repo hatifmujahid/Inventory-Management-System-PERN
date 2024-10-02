@@ -81,7 +81,7 @@ function RetailerRegister({ setAuth }) {
 		};
 		try {
 			const response = await fetch(
-				"http://localhost:5000/authentication/register/retailer",
+				"https://ivms-backend.vercel.app/authentication/register/retailer",
 				{
 					method: "POST",
 					headers: { "Content-type": "application/json" },
